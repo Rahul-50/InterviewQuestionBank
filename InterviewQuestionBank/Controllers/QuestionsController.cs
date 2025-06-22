@@ -65,7 +65,7 @@ public class QuestionsController : Controller
 
         return RedirectToAction("Index");
     }
-
+    //
     private List<Category> GetCategories()
     {
         var dt = _db.GetData("SELECT * FROM Categories");
