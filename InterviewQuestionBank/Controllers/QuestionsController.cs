@@ -68,7 +68,8 @@ public class QuestionsController : Controller
     //
     private List<Category> GetCategories()
     {
-        var dt = _db.GetData("SELECT * FROM Categories");
+        //var dt = _db.GetData("SELECT * FROM Categories");
+        var dt = _db.GetData("SELECT Id,Name FROM Categories");
         var list = new List<Category>();
         foreach (DataRow row in dt.Rows)
         {
